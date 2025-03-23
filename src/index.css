@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base  {
+  body {
+    @apply bg-background text-textPrimary font-quick
+  }
+  .wrapper{
+    @apply w-[90%] mx-auto overflow-hidden max-w-screen-xl
+ }
+}
