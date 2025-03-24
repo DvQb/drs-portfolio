@@ -9,4 +9,8 @@
   .wrapper{
     @apply w-[90%] mx-auto overflow-hidden max-w-screen-xl
  }
+
+ .buttonBlue {
+  @apply w-[283px] h-[50px] border-none bg-primary text-textPrimary text-xl cursor-pointer rounded-full
+ }
 }
