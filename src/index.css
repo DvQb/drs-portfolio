@@ -4,7 +4,7 @@
 
 @layer base  {
   body {
-    @apply bg-background text-textPrimary font-quick
+    @apply bg-[#f5f5f5] text-[#1e1e1e] font-quick 
   }
   .wrapper{
     @apply w-[90%] mx-auto overflow-hidden max-w-screen-xl
@@ -12,5 +12,9 @@
 
  .buttonBlue {
   @apply w-[283px] h-[50px] border-none bg-primary text-textPrimary text-xl cursor-pointer rounded-full
+ }
+
+ .iconStack {
+  @apply flex flex-col justify-center text-center
  }
 }

@@ -8,7 +8,7 @@ const Footer = () => {
    return ( <>
     <hr className="w-full m-auto "></hr>
     
-     <footer className="grid justify-center items-center mt-[50px] mb-[50px] grid-cols-4">
+     <footer className="grid justify-center items-center mt-[50px] pb-[50px] grid-cols-4 dark:bg-background">
            <div>
                 <Link to="/"><img src="/logo.svg" className=" w-24 h-24 ml-[80px] opacity-65 p-3" alt="Logo"/></Link>
                 <div className="flex flex-row gap-[40px] mt-[25px] ml-[65px]">

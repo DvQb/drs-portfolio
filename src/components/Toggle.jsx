@@ -1,25 +1,31 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react';
 
-const Toggle = () => {
-    const [isActive, setActive] = useState(false);
-    const handleToggle = () => {
-        setActive(!isActive);
+function ThemeToggle() {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  useEffect(() => {
+    const root = window.document.documentElement;
+    if (isDarkMode) {
+      root.classList.add('dark');
+    } else {
+      root.classList.remove('dark');
     }
+  }, [isDarkMode]);
 
-    return(
-        <div className="flex justify-center items-center gap-[35px] pt-[35px] pr-[150px] pb-[20px] pl-[10px]">
-            <button 
-            onClick={handleToggle} id="toggle-button" 
-            className="w-10 h-6 rounded-full border-none bg-primary relative flex items-center p-[3px] cursor-pointer transition-colors duration-300 ease-in-out">
-                {isActive ? 'Activo' : 'Inactivo'}
-                <span className="w-[18px] h-[18px] bg-textPrimary border-none rounded-full absolute ml-[3px] transition-transform duration-300 ease-in-out"></span>
-            </button>
-            <div>Light mode</div>
-        </div>
-
-    )
+  return (
+    <div className="flex justify-end items-center py-9 pr-[150px] pl-3">
+        <button
+      onClick={() => setIsDarkMode(!isDarkMode)}
+      className="w-14 h-8 flex items-center bg-primary/80 dark:bg-primary/60 rounded-full p-1 transition duration-300"
+    >
+      <div
+        className={`bg-[#f5f5f5] dark:bg-background w-6 h-6 rounded-full shadow-md transform transition duration-300 ${
+          isDarkMode ? 'translate-x-6' : 'translate-x-0'
+        }`}
+      />
+    </button>
+    </div>
+  );
 }
 
-export default Toggle;
-
-
+export default ThemeToggle;
