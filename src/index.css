@@ -15,6 +15,15 @@
  }
 
  .iconStack {
-  @apply flex flex-col justify-center text-center
+  @apply flex flex-col justify-center text-center w-32 aspect-square shadow-lg rounded-lg items-center py-4 font-semibold dark:bg-background/50
  }
+
+ .iconStyle {
+  @apply w-12 aspect-square
+ }
+
+ h3 {
+  @apply text-2xl font-bold bg-primary w-1/5 rounded-full
+ }
+
 }

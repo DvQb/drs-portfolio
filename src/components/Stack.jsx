@@ -1,44 +1,39 @@
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCss3Alt, faHtml5, faSquareJs, faReact, faPython, faFigma, faSquareGit, faWordpress, faMailchimp  } from '@fortawesome/free-brands-svg-icons'
-import codeIcon from "../assets/img/code-icon.svg"
-import dataIcon from "../assets/img/data-icon.svg"
-import toolsIcon from "../assets/img/tools-icon.svg"
+import adobeI from "../assets/img/adobeI.svg"
+import tailwindIcon from "../assets/img/tailwindIcon.svg"
 
-
+const iconStyle = 'w-24 h-24 mb-2'
 
 const Stack = () => {
     return(
-        <section>
-        <h3 id="stack-title">STACK</h3>
-        <div className="flex">
-            <div className="flex flex-col">
-                <img src={codeIcon} alt="code-icon" className="w-32 aspect-square"/>
-                <span className="stack-button" id="stack-bt-title">FRONT-END</span>
-                <div className=' '>
-                <span className="iconStack"><FontAwesomeIcon icon={faHtml5}/>HTML</span>
-                <span className="iconStack"><FontAwesomeIcon icon={faCss3Alt}/>CSS</span>
-                <span className="iconStack"><FontAwesomeIcon icon={faSquareJs}/>JAVASCRIPT</span>
-                <span className="iconStack"><FontAwesomeIcon icon={faReact}/>REACT JS</span>
-            </div>
+       
+        <section className="text-center pb-6">
+        <h2 className="font-bold text-4xl pt-8">STACK</h2>
+        <div className="gid justify-center">
+            <div className="flex flex-col gap-8 items-center py-8">
+                {/* <img src={codeIcon} alt="code-icon" className=" w-32 aspect-square"/> */}
+                <h3 id="stack-bt-title">FRONT-END</h3>
+                <div className="flex justify-center gap-40">
+                    <span className="iconStack"><FontAwesomeIcon icon={faHtml5} className={` ${iconStyle} text-red-500`}/>HTML</span>
+                    <span className="iconStack"><FontAwesomeIcon icon={faCss3Alt} className={` ${iconStyle} text-blue-700`}/>CSS</span>
+                    <span className="iconStack"><FontAwesomeIcon icon={faSquareJs} className={` ${iconStyle} text-yellow-500`}/>JAVASCRIPT</span>
+                    <span className="iconStack"><FontAwesomeIcon icon={faReact} className={` ${iconStyle} text-cyan-400 `}/>REACT JS</span>
+                    <span className="iconStack"><img src={tailwindIcon} className={`${iconStyle} `}/>TAILWINDCSS</span>
                 </div>
-            <div className="flex flex-col">
-                <img src={dataIcon} alt="data-icon" className="w-32 aspect-square"/>
-                <span className="stack-button" id="stack-bt-title">BACK-END</span>
-                <span className="stack-button"><FontAwesomeIcon icon={faPython}/></span>
-                <span className="stack-button">MONGO DB</span>
-                <span className="stack-button">MySQL</span>
-                <span className="stack-button">FLASK</span>
             </div>
-            <div className="flex flex-col">
-                <img src={toolsIcon}  alt="tools-icon" className="w-32 aspect-square"/>
-                <span className="stack-button" id="stack-bt-title">TOOLS</span>
-                <span className="stack-button">VS CODE</span>
-                <span className="stack-button">GITHUB</span>
-                <span className="stack-button"><FontAwesomeIcon icon={faFigma}/></span>
-                <span className="stack-button">ADOBE ILUSTRATOR</span>
-                <span className="stack-button">WORDPRESS</span>
-                <span className=''>Mailchimp</span>
+           
+            <div className="flex flex-col items-center gap-8  py-8">
+                {/* <img src={toolsIcon}  alt="tools-icon" className="w-32 aspect-square"/> */}
+                <h3 className="w-[15%]">TOOLS</h3>
+                <div className="flex justify-center flex-wrap gap-40">
+                    <span className="iconStack"><FontAwesomeIcon icon={faSquareGit} className={` ${iconStyle} text-red-400`} />GITHUB</span>
+                    <span className="iconStack"><FontAwesomeIcon icon={faFigma} className={iconStyle}/>FIGMA</span>
+                    <span className="iconStack"><img src={adobeI} className={`${iconStyle}`}/>ADOBE ILUSTRATOR</span>
+                    <span className="iconStack"><FontAwesomeIcon icon={faWordpress} className={` ${iconStyle}  text-cyan-700`}/>WORDPRESS</span>
+                    <span className='iconStack'><FontAwesomeIcon icon={faMailchimp} className={` ${iconStyle} bg-yellow-400 rounded-full p-2 text-black`}/>MAILCHIMP</span>
+                </div>
             </div>
         </div>
     </section>
