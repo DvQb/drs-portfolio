@@ -5,8 +5,8 @@ import git from "../assets/img/git-logo.svg";
 
 const Contact = () => {
     return(
-        <section className="" id="contact">
-            <h2 className="text-center font-bold text-4xl pt-8">CONTACT ME!</h2>
+        <section className="my-14" id="contact">
+            
             <div className="flex py-14 mb-6">
                 
                 <Form/>

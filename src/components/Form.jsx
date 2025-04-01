@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 
-function FormularioContacto() {
+function Form() {
   // Definir el estado inicial para cada campo del formulario
   const [formData, setFormData] = useState({
-    nombre: '',
+    name: '',
     email: '',
-    mensaje: ''
+    message: ''
   });
 
   // Manejar cambios en los campos del formulario
@@ -21,33 +21,33 @@ function FormularioContacto() {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Aquí puedes manejar la lógica de envío, como enviar los datos a un servidor o mostrar una alerta
-    alert(`Nombre: ${formData.nombre}\nEmail: ${formData.email}\nMensaje: ${formData.mensaje}`);
+    alert(`Name: ${formData.name}\nEmail: ${formData.email}\nMessage: ${formData.message}`);
     // Opcional: limpiar el formulario después del envío
     setFormData({
-      nombre: '',
+      name: '',
       email: '',
-      mensaje: ''
+      message: ''
     });
   };
 
   return (
-    <div style={{ maxWidth: '500px', margin: '0 auto' }}>
-      <h2>Contacto</h2>
-      <form onSubmit={handleSubmit}>
-        <div style={{ marginBottom: '1rem' }}>
-          <label htmlFor="nombre" style={{ display: 'block', marginBottom: '.5rem' }}>Nombre:</label>
+    <div className="w-1/3 m-auto font-semibold text-background">
+        <h2 className="text-center font-bold text-4xl mb-10">CONTACT ME!</h2>
+      <form onSubmit={handleSubmit} className="grid">
+        <div className="">
+          <label htmlFor="name" className='block mb-3'>Name</label>
           <input
             type="text"
-            id="nombre"
-            name="nombre"
-            value={formData.nombre}
+            id="name"
+            name="name"
+            value={formData.name}
             onChange={handleChange}
             required
-            style={{ width: '100%', padding: '.5rem', fontSize: '1rem' }}
+            className="w-full p-2 text-base rounded-lg mb-8"
           />
         </div>
-        <div style={{ marginBottom: '1rem' }}>
-          <label htmlFor="email" style={{ display: 'block', marginBottom: '.5rem' }}>Correo Electrónico:</label>
+        <div >
+          <label htmlFor="email" className="block mb-3">Email:</label>
           <input
             type="email"
             id="email"
@@ -55,25 +55,25 @@ function FormularioContacto() {
             value={formData.email}
             onChange={handleChange}
             required
-            style={{ width: '100%', padding: '.5rem', fontSize: '1rem' }}
+            className="w-full p-2 rounded-lg mb-8"
           />
         </div>
-        <div style={{ marginBottom: '1rem' }}>
-          <label htmlFor="mensaje" style={{ display: 'block', marginBottom: '.5rem' }}>Mensaje:</label>
+        <div >
+          <label htmlFor="message" className="block mb-3 text-background">Message:</label>
           <textarea
-            id="mensaje"
-            name="mensaje"
-            value={formData.mensaje}
+            id="message"
+            name="message"
+            value={formData.message}
             onChange={handleChange}
             required
             rows="4"
-            style={{ width: '100%', padding: '.5rem', fontSize: '1rem' }}
+            className="w-full p-2 rounded-lg mb-8 "
           ></textarea>
         </div>
-        <button type="submit" style={{ padding: '.5rem 1rem', fontSize: '1rem', cursor: 'pointer' }}>Enviar</button>
+        <button type="submit" className="buttonBlue m-auto">Submit</button>
       </form>
     </div>
   );
 }
 
-export default FormularioContacto;
+export default Form;

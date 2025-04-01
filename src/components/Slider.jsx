@@ -7,11 +7,6 @@ import 'swiper/css/pagination';
 
 
 
-
-
-
-    
-
  function MySlider() {
     return (
       
