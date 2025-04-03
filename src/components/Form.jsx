@@ -31,8 +31,8 @@ function Form() {
   };
 
   return (
-    <div className="w-1/3 m-auto font-semibold text-background">
-        <h2 className="text-center font-bold text-4xl mb-10">CONTACT ME!</h2>
+    <div className="w-1/3 m-auto font-semibold ">
+        <h2 className="text-center font-bold text-5xl mb-10">CONTACT ME!</h2>
       <form onSubmit={handleSubmit} className="grid">
         <div className="">
           <label htmlFor="name" className='block mb-3'>Name</label>
@@ -59,7 +59,7 @@ function Form() {
           />
         </div>
         <div >
-          <label htmlFor="message" className="block mb-3 text-background">Message:</label>
+          <label htmlFor="message" className="block mb-3">Message:</label>
           <textarea
             id="message"
             name="message"

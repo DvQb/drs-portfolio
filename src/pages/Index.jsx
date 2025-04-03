@@ -13,7 +13,7 @@ const Index = () => {
         <div className="transition-colors duration-300 dark:bg-background dark:text-textPrimary">
 
             <Header/>
-            <Toggle/>
+            {/* <Toggle/> */}
             <Showcase/>
             <AboutMe/>
             <Stack/>

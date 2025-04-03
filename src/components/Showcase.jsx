@@ -17,7 +17,7 @@ const Showcase = () => {
                 </a>
                 <a href="#contact"><button className="buttonBlue" >Contact me</button></a>
             </div>
-            <div className="flex justify-end mt-[60px] pr-[150px] gap-[50px] items-center">
+            <div className="flex justify-center mt-[60px] gap-[50px] items-center">
                 <a href="https://www.linkedin.com/in/david-resendiz-bb1b432b0/" target="_blank"><img src={InIcon} alt="linkedin logo" className="w-11 h-11"/></a>
                 <a href="https://github.com/DvQb" target="_blank"><img src={GitIcon} alt="git logo" className="w-11 h-11"/></a> 
                 <a href="" target="_blank"><img src={EmailIcon} alt="email logo" className="w-11 h-8"/></a>

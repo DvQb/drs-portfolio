@@ -11,7 +11,7 @@ import 'swiper/css/pagination';
     return (
       
 
-      <section className="py-12 text-center mb-14">
+      <section className="py-12 text-center mb-14 w-[85%] m-auto">
         
         <h2 className="font-bold text-4xl pt-8 pb-14">PROJECTS</h2>
         <Swiper

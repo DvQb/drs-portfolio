@@ -4,14 +4,14 @@
 
 @layer base  {
   body {
-    @apply bg-[#f5f5f5] text-[#1e1e1e] font-quick transition-colors duration-300 dark:bg-background dark:text-textPrimary overflow-x-hidden
+    @apply max-w-[1580px] bg-[#f5f5f5] text-[#1e1e1e] font-quick transition-colors duration-300 dark:bg-background dark:text-textPrimary overflow-x-hidden
   }
   .wrapper{
     @apply w-[90%] mx-auto overflow-hidden max-w-screen-xl
  }
 
  .buttonBlue {
-  @apply w-[283px] h-[50px] border-none bg-primary/90 text-textPrimary text-xl cursor-pointer rounded-full  hover:scale-105 hover:brightness-110
+  @apply w-[283px] h-[50px] border-none bg-primary/90 dark:bg-primary/70 text-textPrimary text-xl cursor-pointer rounded-full  hover:scale-105 hover:brightness-110
  }
 
  .iconStack {
@@ -23,7 +23,7 @@
  }
 
  h3 {
-  @apply text-2xl font-bold bg-primary w-1/5 rounded-full shadow-lg text-center
+  @apply text-2xl font-bold bg-primary w-1/5 rounded-full shadow-lg text-center  dark:bg-primary/70
  }
  .sliderStyle {
   @apply h-[450px] w-[85%] justify-self-center rounded-2xl text-center

@@ -7,7 +7,7 @@ import git from "../assets/img/git-logo.svg";
 const Footer = () => {
    return ( 
     <>
-        <section className="bg-gray-200 dark:bg-[#2a2a2a]/50">
+        <section className="bg-gray-200 dark:bg-[#2a2a2a]/50 grid w-full">
         <hr className="w-full m-auto border-t-2 border-background dark:border-textPrimary "></hr>
     
     <footer className="grid justify-center  mt-[50px] pb-[50px] grid-cols-4">
@@ -26,17 +26,20 @@ const Footer = () => {
                <li>Diagramming</li>
                <li>Brainstorming</li>
                <li>Team colaboration</li>
-               <li>Online whiteboard</li>
+               
               
            </ul>
            <ul className="flex flex-col gap-6 font-medium">
                <li className="font-extrabold text-lg">EXPLORE</li>
-               <a href="./pages/Projects.html"><li>Projects</li></a>
-               <a href="./pages/Resume.html"><li>My resume</li></a>
+               <li><Link to="/projects">Projects</Link></li>
+               <li><a href="#about-me">About Me</a></li>
+               <li><Link to="/resume">Resume</Link></li>
+               <li><a href="#contact">Contact</a></li>
+               
            </ul>
            <ul className="flex flex-col gap-6 font-medium">
                <li className="font-extrabold text-lg">CONTACT</li>
-               <li>https://github.com/DvQb</li>
+               <li><a href="https://github.com/DvQb" target="blank">https://github.com/DvQb</a></li>
                <li>davidresendiz753@gmail.com</li>
                <li> +52 44 39 33 05 26</li>
            </ul>
