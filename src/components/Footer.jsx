@@ -7,7 +7,7 @@ import git from "../assets/img/git-logo.svg";
 const Footer = () => {
    return ( 
     <>
-        <section className="bg-gray-200 dark:bg-[#2a2a2a]/50 grid w-full">
+        <section className=" dark:bg-[#2a2a2a]/50 grid w-full">
         <hr className="w-full m-auto border-t-2 border-background dark:border-textPrimary "></hr>
     
     <footer className="grid justify-center  mt-[50px] pb-[50px] grid-cols-4">

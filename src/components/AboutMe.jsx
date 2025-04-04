@@ -2,13 +2,18 @@ import Dsr from "../assets/img/dsr.png"
 
 const AboutMe = () => {
     return(
-        <section className="grid grid-cols-2 items-center justify-center px-[15%] gap-[120px] mb-32" id="about-me">
+        <section className="grid grid-cols-2 w-[95%] mx-auto items-center justify-center px-[15%] gap-[120px] mb-32" id="about-me">
             
         <img src={Dsr}  className=" w-[420px] h- border-none rounded-full"/>
-        <div className="w-[80%]">
+        <div className="w-[100%]">
             <h2 className="mb-[30px] text-5xl font-quick font-bold ">ABOUT ME</h2>
-            <p className="font-semibold ">I am a skilled web developer with a strong focus on creating responsive, user-centered websites that deliver seamless experiences across all devices. Proficient in front-end and back-end development, I leverage a robust technical toolkit, including HTML, CSS, JavaScript, Python, SQL, and React, to build dynamic and engaging digital solutions.
-                With expertise in modern design tools like Figma, I ensure every project achieves a balance between aesthetics and functionality. My approach combines technical excellence with a deep understanding of user needs, resulting in websites that are not only visually appealing but also highly intuitive and performance-driven.</p>
+            <p className="font-semibold w-full">I am currently focused on front end development using technologies such as React, Js, Html, Css and TailwindCss. 
+            </p>
+            <p className="font-semibold my-6">
+            I have developed some real projects for local companies and continue to deepen my learning in back end development with Python and Django.
+
+            I've also done a couple of projects with tools like WordPress, Adobe Ilustator, and Figma.
+            </p>
         </div>                      
 </section>
     )

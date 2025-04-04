@@ -6,6 +6,7 @@ import Footer from "../components/Footer"
 import Stack from "../components/Stack"
 import MySlider from "../components/Slider";
 import Contact from "../components/Contact"
+import More from "../components/MoreAboutMe"
 
 
 const Index = () => {
@@ -18,6 +19,7 @@ const Index = () => {
             <AboutMe/>
             <Stack/>
             <MySlider/>
+            <More/>
             <Contact/>
             <Footer/>
         </div>

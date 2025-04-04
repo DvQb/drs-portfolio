@@ -13,7 +13,7 @@ const Contact = () => {
 
              
                 <aside className="grid gap-8 w-[40%] pr-10">
-                    <p className="text-3xl font-medium w-[75%]">IF <span className="text-primary">YOU</span> THINK <span className="text-primary">WE</span> SHOULD WORK TOGETHER, DON’T HESITATE TO <span className="text-primary"> CONTACT ME!</span></p>
+                    <p className="text-3xl font-medium w-[75%]">IF <span className="text-[#3Eb6ee]">YOU</span> THINK <span className="text-[#3Eb6ee]">WE</span> SHOULD WORK TOGETHER, DON’T HESITATE TO <span className="text-[#3Eb6ee]"> CONTACT ME!</span></p>
                     <span className="text-2xl font-semibold">davidresendiz753@gmail.com</span>
                     <span className="text-2xl font-semibold">+52 4439330526</span>
                     

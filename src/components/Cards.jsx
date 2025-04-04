@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHtml5, faCss3Alt, faReact, faJsSquare, faPython } from "@fortawesome/free-brands-svg-icons";
+import { faHtml5, faCss3Alt, faReact, faJsSquare, faPython, faWordpress } from "@fortawesome/free-brands-svg-icons";
 import { SiDjango, SiTailwindcss } from "react-icons/si";
 import beautySpace from "../assets/img/beauty-space.webp"
 import donCimarron from "../assets/img/don-cimarron.webp"
@@ -13,16 +13,23 @@ import elCentinela from "../assets/img/elCentinela.png"
 
 
 
-const mdCardStyle =  " dark:bg-[#2a2a2a] shadow-xl h-auto w-2/5 rounded-2xl m-auto text-textPrimary grid gap-3 justify-end my-8 overflow-hidden hover:scale-105  "
+const mdCardStyle =  " dark:bg-[#2a2a2a] shadow-xl h-auto w-2/5 rounded-2xl m-auto text-textPrimary grid gap-3 justify-end my-8 overflow-hidden hover:scale-105  ";
 
-const iconStyles = "text-3xl "
+const iconStyles = "text-3xl ";
 
 
-const Card = ({image, title , text, icon1,icon2,icon3,icon4}) => {
+const Card = ({url, image, title , text, icon1,icon2,icon3,icon4}) => {
+
+    const handleClick = () => {
+        window.open(url, "_blank");
+    };
+
     return (
+
+        
         
            
-                    <div className={mdCardStyle} >
+                    <div onClick={handleClick} className={mdCardStyle} >
                         
                         <img src={image} className="w-full h-80" alt="project image" />
                         
@@ -55,6 +62,7 @@ const Cards = () => {
 
                                 
                     <Card
+                    
                     image={donCimarron}
                     title="Don Cimarron"
                     text="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa sit cupiditate corporis explicabo pariatur, non quasi enim nesciunt reiciendis nemo."
@@ -90,13 +98,12 @@ const Cards = () => {
                     
                     />
                     <Card
+                    url = "https://armeriacentinela.com"
                     image={elCentinela}
                     title="El Centinela"
                     text="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa sit cupiditate corporis explicabo pariatur, non quasi enim nesciunt reiciendis nemo."
-                    icon1={<FontAwesomeIcon icon={ faHtml5 } className={iconStyles}/> }
-                    icon2={<FontAwesomeIcon icon={ faCss3Alt } className={iconStyles}/>}
-                    icon3={<FontAwesomeIcon icon={ faReact } className={iconStyles}/>}
-                    icon4={<SiTailwindcss className={iconStyles}/>}
+                    icon1={<FontAwesomeIcon icon={ faWordpress } className={iconStyles}/> }
+                    
                     
                     />
                     <Card
