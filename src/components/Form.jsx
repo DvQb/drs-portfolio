@@ -1,79 +1,80 @@
 import React, { useState } from 'react';
 
-function Form() {
-  // Definir el estado inicial para cada campo del formulario
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
+const Form = () => {
+  const [status, setStatus] = useState('');
 
-  // Manejar cambios en los campos del formulario
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value
-    });
-  };
-
-  // Manejar el envío del formulario
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Aquí puedes manejar la lógica de envío, como enviar los datos a un servidor o mostrar una alerta
-    alert(`Name: ${formData.name}\nEmail: ${formData.email}\nMessage: ${formData.message}`);
-    // Opcional: limpiar el formulario después del envío
-    setFormData({
-      name: '',
-      email: '',
-      message: ''
+    setStatus('sending');
+
+    const form = new FormData(e.target);
+    const response = await fetch('https://formspree.io/f/xgvapazr', {
+      method: 'POST',
+      body: form,
+      headers: {
+        Accept: 'application/json',
+      },
     });
+
+    if (response.ok) {
+      setStatus('success');
+      e.target.reset();
+    } else {
+      setStatus('error');
+    }
   };
 
   return (
-    <div className="w-1/3 m-auto font-semibold ">
-        <h2 className="text-center font-bold text-5xl mb-10">CONTACT ME!</h2>
-      <form onSubmit={handleSubmit} className="grid">
-        <div className="">
-          <label htmlFor="name" className='block mb-3'>Name</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            required
-            className="w-full p-2 text-base rounded-lg mb-8"
-          />
+        <div className="w-1/3 m-auto font-semibold ">
+            <h2 className="text-center font-bold text-5xl mb-10">CONTACT ME!</h2>
+          <form onSubmit={handleSubmit} className="grid">
+            <div className="">
+              <label htmlFor="name" className='block mb-3'>Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                
+                required
+                className="w-full p-2 text-base rounded-lg mb-8"
+              />
+            </div>
+            <div >
+              <label htmlFor="email" className="block mb-3">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                
+                required
+                className="w-full p-2 rounded-lg mb-8"
+              />
+            </div>
+            <div >
+              <label htmlFor="message" className="block mb-3">Message:</label>
+              <textarea
+                id="message"
+                name="message"
+                
+                required
+                rows="4"
+                className="w-full p-2 rounded-lg mb-8 "
+              ></textarea>
+            </div>
+            <button type="submit" className="buttonBlue m-auto">
+              
+              {status === 'sending' ? 'Sendig...' : 'Send Message'}
+            </button>
+
+            <div className="flex justify-center pt-6">
+            {status === 'success' && <p className="text-green-500 mt-2">✅ Your message has been sent successfully.</p>}
+            {status === 'error' && <p className="text-red-500 mt-2">❌ Something went wrong. Please try again.</p>}
+            </div>
+
+          </form>
         </div>
-        <div >
-          <label htmlFor="email" className="block mb-3">Email:</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            required
-            className="w-full p-2 rounded-lg mb-8"
-          />
-        </div>
-        <div >
-          <label htmlFor="message" className="block mb-3">Message:</label>
-          <textarea
-            id="message"
-            name="message"
-            value={formData.message}
-            onChange={handleChange}
-            required
-            rows="4"
-            className="w-full p-2 rounded-lg mb-8 "
-          ></textarea>
-        </div>
-        <button type="submit" className="buttonBlue m-auto">Submit</button>
-      </form>
-    </div>
-  );
-}
+      );
+  
+};
 
 export default Form;

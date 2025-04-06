@@ -9,13 +9,13 @@ const iconStyle = 'w-24 h-24 mb-2'
 const Stack = () => {
     return(
        
-        <section className="text-center pb-6">
+        <section className="text-center pb-6 w-[85%] m-auto">
         <h2 className="font-bold text-4xl pt-8">STACK</h2>
         <div className="gid justify-center">
             <div className="flex flex-col gap-8 items-center py-8">
                 {/* <img src={codeIcon} alt="code-icon" className=" w-32 aspect-square"/> */}
                 <h3 id="stack-bt-title">FRONT-END</h3>
-                <div className="flex justify-center gap-20">
+                <div className="flex justify-center gap-28">
                     <span className="iconStack"><FontAwesomeIcon icon={faHtml5} className={` ${iconStyle} text-red-500`}/>HTML</span>
                     <span className="iconStack"><FontAwesomeIcon icon={faCss3Alt} className={` ${iconStyle} text-blue-700`}/>CSS</span>
                     <span className="iconStack"><FontAwesomeIcon icon={faSquareJs} className={` ${iconStyle} text-yellow-500`}/>JAVASCRIPT</span>
@@ -27,7 +27,7 @@ const Stack = () => {
             <div className="flex flex-col items-center gap-8  py-8">
                 {/* <img src={toolsIcon}  alt="tools-icon" className="w-32 aspect-square"/> */}
                 <h3 className="w-[15%]">TOOLS</h3>
-                <div className="flex justify-center flex-wrap gap-20">
+                <div className="flex justify-center flex-wrap gap-28">
                     <span className="iconStack"><FontAwesomeIcon icon={faSquareGit} className={` ${iconStyle} text-red-400`} />GITHUB</span>
                     <span className="iconStack"><FontAwesomeIcon icon={faFigma} className={iconStyle}/>FIGMA</span>
                     <span className="iconStack"><img src={adobeI} className={`${iconStyle}`}/>ADOBE ILUSTRATOR</span>
