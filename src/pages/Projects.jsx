@@ -9,10 +9,10 @@ import Cards from "../components/Cards"
 
 const Projects = () => {
     return(
-        <div className="transition-colors duration-300 dark:bg-background dark:text-textPrimary">
+        <div className="gridm justify-center transition-colors duration-300 dark:bg-background dark:text-textPrimary">
 
         <Header/>
-        {/* <Toggle/> */}
+        <Toggle/>
         <Cards/>
         
         

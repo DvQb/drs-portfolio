@@ -11,17 +11,17 @@ import More from "../components/MoreAboutMe"
 
 const Index = () => {
     return(
-        <div className="transition-colors duration-300 dark:bg-background dark:text-textPrimary">
+        <div className="  transition-colors duration-300 dark:bg-background dark:text-textPrimary">
 
             <Header/>
-            {/* <Toggle/> */}
+            <Toggle/>
             <Showcase/>
             <AboutMe/>
             <Stack/>
             <MySlider/>
             <More/>
             <Contact/>
-            <Footer/>
+            <Footer/> 
         </div>
     )
 }

@@ -13,12 +13,12 @@ import 'swiper/css/pagination';
 
       <section className="py-12 text-center mb-14 w-[85%] m-auto">
         
-        <h2 className="font-bold text-4xl pt-8 pb-14">PROJECTS</h2>
+        <h2 className="font-bold text-3xl md:text-4xl pt-8 pb-14">PROJECTS</h2>
         <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={20}
         slidesPerView={1}
-        navigation
+       
         pagination={{ clickable: true }}
         autoplay={{ delay: 3000 }}
         loop={true}

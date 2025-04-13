@@ -25,8 +25,8 @@ const Form = () => {
   };
 
   return (
-        <div className="w-1/3 m-auto font-semibold ">
-            <h2 className="text-center font-bold text-5xl mb-10">CONTACT ME!</h2>
+        <div className="w-[80%] md:w-1/2 lg:w-1/3 m-auto font-semibold ">
+            <h2 className="text-center font-bold text-4xl md:text-5xl mb-10">CONTACT ME!</h2>
           <form onSubmit={handleSubmit} className="grid">
             <div className="">
               <label htmlFor="name" className='block mb-3'>Name</label>
