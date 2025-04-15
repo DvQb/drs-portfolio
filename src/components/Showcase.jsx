@@ -6,7 +6,7 @@ import EmailIcon from "../assets/img/email-logo.svg"
 
 const Showcase = () => {
     return(
-        <section className="flex justify-center items-center md:h-[450px] lg:h-auto mb-20 gap-[150px] md:pt-[20px]">
+        <section className="flex justify-center items-center md:h-[450px] lg:h-auto mb-20 lg:mb-0 gap-[150px] md:pt-[20px]">
         {/* <img src={LargeLogo} alt="imagen-logo" className=" hidden md:block md:w-[370px] md:h-[660px] opacity-30 md:"/> */}
         <div className="inline w-[800px] md:h-[450px] lg:h-[700px] pt-10 lg:pt-[100px]">
             <h1 className="text-4xl md:text-7xl flex justify-center font-semibold">David S. Resendiz</h1>

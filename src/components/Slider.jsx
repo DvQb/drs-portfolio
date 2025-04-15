@@ -4,6 +4,10 @@ import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import dispelAE from '../assets/img/dispelAE.png'
+import elCentinela from '../assets/img/elCentinela.png'
+import extensionList from '../assets/img/extensionList.png'
+import manage from '../assets/img/manage.png'
 
 
 
@@ -13,7 +17,7 @@ import 'swiper/css/pagination';
 
       <section className="py-12 text-center mb-14 w-[85%] m-auto">
         
-        <h2 className="font-bold text-3xl md:text-4xl pt-8 pb-14">PROJECTS</h2>
+        <h2 className="font-bold text-3xl md:text-4xl pt-8 mb-14">PROJECTS</h2>
         <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={20}
@@ -23,11 +27,27 @@ import 'swiper/css/pagination';
         autoplay={{ delay: 3000 }}
         loop={true}
       >
-        <SwiperSlide><div className="sliderStyle bg-red-400">1</div></SwiperSlide>
-        <SwiperSlide><div className="sliderStyle bg-orange-300">2</div></SwiperSlide>
-        <SwiperSlide><div className="sliderStyle bg-blue-400">3</div></SwiperSlide>
-        <SwiperSlide><div className="sliderStyle bg-blue-400">4</div></SwiperSlide>
-        <SwiperSlide><div className="sliderStyle bg-blue-400">5</div></SwiperSlide>
+        <SwiperSlide>
+          <div className="sliderStyle ">
+              <img src={dispelAE} alt="" className=' w-full h-full   rounded-2xl ' />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="sliderStyle">
+            <img src={elCentinela} alt="" className='w-full h-full   rounded-2xl ' />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="sliderStyle ">
+            <img src={manage} alt="" className='w-full h-full   rounded-2xl' />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="sliderStyle">
+            <img src={extensionList} alt="" className='w-full h-full   rounded-2xl' />
+          </div>
+        </SwiperSlide>
+        
       </Swiper>
 
       </section>

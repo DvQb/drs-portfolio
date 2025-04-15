@@ -50,7 +50,7 @@ const Form = () => {
                 className="w-full p-2 rounded-lg mb-8"
               />
             </div>
-            <div >
+            <div className='text-background'>
               <label htmlFor="message" className="block mb-3">Message:</label>
               <textarea
                 id="message"
@@ -61,12 +61,12 @@ const Form = () => {
                 className="w-full p-2 rounded-lg mb-8 "
               ></textarea>
             </div>
-            <button type="submit" className="buttonBlue m-auto">
+            <button type="submit" disabled={status === 'sending'} className="buttonBlue m-auto">
               
-              {status === 'sending' ? 'Sendig...' : 'Send Message'}
+              {status === 'sending' ? 'Sending...' : 'Send Message'}
             </button>
 
-            <div className="flex justify-center pt-6">
+            <div className="flex justify-center pt-6 " >
             {status === 'success' && <p className="text-green-500 mt-2">✅ Your message has been sent successfully.</p>}
             {status === 'error' && <p className="text-red-500 mt-2">❌ Something went wrong. Please try again.</p>}
             </div>
