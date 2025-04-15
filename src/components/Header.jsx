@@ -28,7 +28,7 @@ const Header = () => {
 
             <nav className="fixed inset-0 translate-x-full peer-checked:translate-x-0 transition-transform md:static md:translate-x-0"> 
                 <ul className="
-                absolute inset-x-0 top-24 p-12 bg-textPrimary dark:bg-[#2a2a2a] items-center  w-[90%] mx-auto rounded-md h-max grid gap-3 text-center font-bold shadow-2xl 
+                absolute inset-x-0 top-24 p-12 bg-textPrimary dark:bg-[#2a2a2a] items-center  w-[90%] h-[250px] md:h-auto mx-auto rounded-md  grid gap-3 text-center font-bold shadow-2xl 
                 
                 md:static md:shadow-none md:p-0 md:w-full  md:flex md:items-center md:justify-center md:gap-3 md:text-lg md:bg-transparent md:dark:bg-transparent md:font-medium" >
 
