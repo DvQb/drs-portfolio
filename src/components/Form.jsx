@@ -36,7 +36,7 @@ const Form = () => {
                 name="name"
                 
                 required
-                className="w-full p-2 text-base rounded-lg mb-8"
+                className="w-full p-2 text-base rounded-lg mb-8 text-background"
               />
             </div>
             <div >
@@ -47,10 +47,10 @@ const Form = () => {
                 name="email"
                 
                 required
-                className="w-full p-2 rounded-lg mb-8"
+                className="w-full p-2 rounded-lg mb-8 text-background"
               />
             </div>
-            <div className='text-background'>
+            <div className=''>
               <label htmlFor="message" className="block mb-3">Message:</label>
               <textarea
                 id="message"
@@ -58,7 +58,7 @@ const Form = () => {
                 
                 required
                 rows="4"
-                className="w-full p-2 rounded-lg mb-8 "
+                className="w-full p-2 rounded-lg mb-8 text-background "
               ></textarea>
             </div>
             <button type="submit" disabled={status === 'sending'} className="buttonBlue m-auto">

@@ -15,7 +15,7 @@ import manage from '../assets/img/manage.png'
     return (
       
 
-      <section className="py-12 text-center mb-14 w-[85%] m-auto">
+      <section className="py-12 text-center mb-14 w-full lg:w-[85%] m-auto">
         
         <h2 className="font-bold text-3xl md:text-4xl pt-8 mb-14">PROJECTS</h2>
         <Swiper
