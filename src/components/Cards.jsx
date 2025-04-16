@@ -93,6 +93,7 @@ const Cards = () => {
                     /> */}
 
         <Card
+          url="https://dispel-ae.com"
           image={dispel}
           title="Disple AE"
           text="This web page was created for a local business to improve its marketing and recruiting reach. It features technologies such as React, Tailwind, and TypeScript."
@@ -108,6 +109,7 @@ const Cards = () => {
           icon1={<FontAwesomeIcon icon={faWordpress} className={iconStyles} />}
         />
         <Card
+          url="https://extension-list-8dhb.vercel.app/"
           image={extensionList}
           title="Extension List"
           text="This extensions list was created from a Front End Mentor Challenge exercise. The project included HTML, CSS, React, Json, and Tailwind. During development, I learned how to create cards using useState and taking the data from a Json file."
