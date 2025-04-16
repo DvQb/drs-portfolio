@@ -20,7 +20,7 @@ import manage from "../assets/img/manage.png";
 import extensionList from "../assets/img/extensionList.png";
 
 const mdCardStyle =
-  " bg-white dark:bg-[#2a2a2a] shadow-xl h-[580px] w-[300px] lg:w-[550px] lg:h-[650px] rounded-2xl my-auto text-textPrimary grid gap-3 justify-end my-8 overflow-hidden hover:scale-105  ";
+  " bg-white dark:bg-[#2a2a2a] shadow-xl md:h-[600px] w-[300px] lg:w-[550px] lg:h-[650px] rounded-2xl my-auto text-textPrimary grid gap-3 justify-end my-8 overflow-hidden hover:scale-105  ";
 
 const iconStyles = "text-3xl ";
 
@@ -33,7 +33,7 @@ const Card = ({ url, image, title, text, icon1, icon2, icon3, icon4 }) => {
     <div onClick={handleClick} className={mdCardStyle}>
       <img src={image} className="w-full h-44 lg:h-80" alt="project image" />
 
-      <h3 className="mx-auto text-lg md:text-xl lg:text-2xl text-nowrap px-4 w-auto mt-3">
+      <h3 className="mx-auto h-10 text-lg md:text-xl lg:text-2xl text-nowrap px-4 w-auto mt-3">
         {title}
       </h3>
       <p className="px-10 py-3  text-background dark:text-textPrimary ">
