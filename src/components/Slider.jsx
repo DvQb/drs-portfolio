@@ -20,7 +20,7 @@ import { SiTailwindcss, SiJson } from "react-icons/si";
 
       <section className="py-12 text-center m-auto mt-20 mb-28 md:mt-0 md:mb-14 w-full lg:w-[85%] ">
         
-        <h2 className="font-bold text-3xl md:text-4xl mb-20 md:pt-8 md:mb-14">PROJECTS</h2>
+        <h2 className="font-bold text-3xl md:text-4xl mb-10 md:pt-8 md:mb-14">PROJECTS</h2>
         <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={20}
