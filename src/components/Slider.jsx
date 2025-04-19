@@ -8,6 +8,9 @@ import dispelAE from '../assets/img/dispelAE.png'
 import elCentinela from '../assets/img/elCentinela.png'
 import extensionList from '../assets/img/extensionList.png'
 import manage from '../assets/img/manage.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCss3Alt, faHtml5, faJsSquare, faReact, faWordpress } from '@fortawesome/free-brands-svg-icons';
+import { SiTailwindcss, SiJson } from "react-icons/si";
 
 
 
@@ -24,27 +27,59 @@ import manage from '../assets/img/manage.png'
         slidesPerView={1}
        
         pagination={{ clickable: true }}
-        autoplay={{ delay: 3000 }}
-        loop={true}
+        loop = {true}
+        autoplay = {{delay : 2000}}
+       
       >
         <SwiperSlide>
-          <div className="sliderStyle ">
-              <img src={dispelAE} alt="" className=' w-full h-full   rounded-2xl ' />
+          <div className=" sliderStyle  grid  ">
+              <img src={dispelAE} alt="Dispel Project Image" className=' w-full h-[210px]    rounded-t-2xl ' />
+              <div className='h-full pb-4 pt-6 mb-4  bg-background/20 dark:bg-[#2a2a2a] dark:text-textPrimary rounded-b-2xl font-semibold text-xl text-black'>
+                <h4>Dispel AE</h4>
+                <div className='flex gap-6 justify-center mt-4'>
+                  <FontAwesomeIcon icon={faReact}/>
+                  <FontAwesomeIcon icon={faHtml5}/>
+                  <SiTailwindcss />
+                </div>
+              </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="sliderStyle">
-            <img src={elCentinela} alt="" className='w-full h-full   rounded-2xl ' />
+          <div className="sliderStyle grid">
+            <img src={elCentinela} alt="El Centinela Project Image" className='w-full h-[210px]   rounded-t-2xl ' />
+           <div className='h-full pb-4 pt-6 mb-4  bg-background/20 dark:bg-[#2a2a2a] dark:text-textPrimary rounded-b-2xl font-semibold text-xl text-black'>
+                <h4>El Centinela</h4>
+                <div className='flex gap-6 justify-center mt-4'>
+                  <FontAwesomeIcon icon={faWordpress}/>
+                </div>
+              </div>
+          </div> 
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="sliderStyle grid">
+            <img src={manage} alt="Manage project Image" className='w-full h-[210px]   rounded-t-2xl' />
+          <div className='h-full pb-4 pt-6 mb-4  bg-background/20 dark:bg-[#2a2a2a] dark:text-textPrimary rounded-b-2xl font-semibold text-xl text-black'>
+                <h4>Manage</h4>
+                <div className='flex gap-6 justify-center mt-4'>
+                  <FontAwesomeIcon icon={faJsSquare}/>
+                  <FontAwesomeIcon icon={faHtml5}/>
+                  <SiTailwindcss />
+                </div>
+              </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="sliderStyle ">
-            <img src={manage} alt="" className='w-full h-full   rounded-2xl' />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="sliderStyle">
-            <img src={extensionList} alt="" className='w-full h-full   rounded-2xl' />
+          <div className="sliderStyle grid">
+            <img src={extensionList} alt="" className='w-full h-[210px]   rounded-t-2xl' />
+            <div className='h-full pb-4 pt-6 mb-4 bg-background/20 dark:bg-[#2a2a2a] dark:text-textPrimary rounded-b-2xl font-semibold text-xl text-black'>
+                <h4>Extension List</h4>
+                <div className='flex gap-6 justify-center mt-4'>
+                  <FontAwesomeIcon icon={faReact}/>
+                  <FontAwesomeIcon icon={faCss3Alt}/>
+                  <SiTailwindcss />
+                  <SiJson />
+                </div>
+              </div>
           </div>
         </SwiperSlide>
         
