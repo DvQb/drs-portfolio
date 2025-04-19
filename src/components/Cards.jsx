@@ -6,6 +6,7 @@ import {
   faJsSquare,
   faPython,
   faWordpress,
+  faNodeJs,
   
 } from "@fortawesome/free-brands-svg-icons";
 import { SiDjango, SiTailwindcss, SiJson } from "react-icons/si";
@@ -13,7 +14,7 @@ import beautySpace from "../assets/img/beauty-space.webp";
 import donCimarron from "../assets/img/don-cimarron.webp";
 import urban from "../assets/img/urban-clothes.webp";
 import arq from "../assets/img/arq.webp";
-import exxa from "../assets/img/cars-shop.webp";
+import credimax from "../assets/img/credimax.webp";
 import dispel from "../assets/img/dispelAE.png";
 import elCentinela from "../assets/img/elCentinela.png";
 import manage from "../assets/img/manage.png";
@@ -67,18 +68,17 @@ const Cards = () => {
           icon4={<SiTailwindcss className={iconStyles} />}
         />
 
-        {/*                                 
-                    <Card
+                                        
+         <Card
                     
-                    image={donCimarron}
-                    title="Don Cimarron"
-                    text="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa sit cupiditate corporis explicabo pariatur, non quasi enim nesciunt reiciendis nemo."
-                    icon1={<FontAwesomeIcon icon={ faHtml5 }  className={iconStyles}/> }
-                    icon2={<FontAwesomeIcon icon={ faCss3Alt } className={iconStyles}/>}
-                    icon3={<FontAwesomeIcon icon={ faReact } className={iconStyles}/>}
-                    icon4={<SiTailwindcss className={iconStyles}/>}
+           image={credimax}
+           title="Credimax"
+           text="Credimax is a web platform that simplifies credit applications, offers personalized financial guidance, and allows users to manage their information securely through an intuitive and efficient dashboard system."
+           icon1={<FontAwesomeIcon icon={ faReact }  className={iconStyles}/> }
+           icon3={<FontAwesomeIcon icon={ faNodeJs } className={iconStyles}/>}
+           icon4={<SiTailwindcss className={iconStyles}/>}
                     
-                    /> */}
+           /> 
         {/* <Card
                     image={beautySpace}
                     title="Beauty Space"
